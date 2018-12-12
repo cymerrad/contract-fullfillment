@@ -9,9 +9,11 @@
   "devDependencies": {
     "@types/node": "^10.12.12",
     "ts-node": "^7.0.1",
-    "typescript": "^3.2.2"
+    "typescript": "^3.2.2",
+    "web3": "^1.0.0-beta.37"
   },
   "scripts": {
+    "geth": "geth --config geth.toml",
     "app": "ts-node src/index.ts",
     "build": "tsc -p ."
   }
