@@ -1,0 +1,13 @@
+{
+  "name": "contract-fullfillment",
+  "version": "1.0.0",
+  "description": "Fullfilling my contract",
+  "main": "index.js",
+  "author": "Radosław Cymer <cymerrad@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^10.12.12",
+    "typescript": "^3.2.2"
+  }
+}
