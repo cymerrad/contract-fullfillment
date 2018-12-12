@@ -14,6 +14,7 @@
   },
   "scripts": {
     "geth": "geth --config geth.toml",
+    "geth-console": "geth --config geth.toml console",
     "app": "ts-node src/index.ts",
     "build": "tsc -p ."
   }
