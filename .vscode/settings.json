@@ -1,8 +1,0 @@
-{
-	"solidity.solhintRules": {
-		"indentation": [
-			"error",
-			2
-		]
-	},
-}
