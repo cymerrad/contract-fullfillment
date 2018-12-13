@@ -18,6 +18,7 @@
     "deploy": "truffle compile && truffle migrate --reset",
     "geth": "geth --config geth.toml",
     "geth-console": "geth --config geth.toml console",
+    "ganache": "nohup ganache-cli -v 1>ganache.log 2>ganache.log &",
     "app": "ts-node src/index.ts",
     "build": "tsc -p ."
   }
