@@ -1,6 +1,7 @@
 {
   "include": [
     "src/**/*",
+    "types/**/*",
     "./node_modules/@truffle-types/**/*"
   ],
   "compilerOptions": {

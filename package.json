@@ -21,7 +21,7 @@
     "geth": "geth --config geth.toml",
     "geth-console": "geth --config geth.toml console",
     "ganache": "nohup ganache-cli -v 1>local/ganache.log 2>local/ganache.log &",
-    "recover-types": "ts-node -p ./tsconfig.json src/index.ts",
+    "recover-types": "ts-node --files --project ./tsconfig.json src/recoverTypes.ts",
     "app": "ts-node src/index.ts",
     "build": "tsc -p ."
   }
