@@ -1,6 +1,4 @@
 import Web3 = require("web3");
-
-import "@truffle-types/truffle-contract";
 import contract from "truffle-contract";
 
 const provider = new Web3.providers.HttpProvider('http://localhost:8545');
@@ -18,8 +16,9 @@ interface ZombieInterface {
 	const addresses = await web3.eth.getAccounts();
 	const addr = addresses[0];
 
-	Zombie.deployed().then((instance: ZombieInterface) => {
+	// Zombie.deployed().then((instance: ZombieInterface) => {
 
-	})
+	// })
+	console.log(addr);
 
 })()
