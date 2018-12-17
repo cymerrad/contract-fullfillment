@@ -7,13 +7,12 @@ const web3 = new Web3(provider);
 
 const ZombieArtifact = require('../build/contracts/ZombieOwnership.json');
 const Zombie: TruffleContract<ZombieOwnershipInstance> = contract(ZombieArtifact);
-
+Zombie.setProvider(provider);
 
 (async () => {
 	console.log("version:", web3.version);
 	const addresses = await web3.eth.getAccounts();
 	const addr = addresses[0];
-	Zombie.setProvider(provider);
 
 	Zombie.deployed().then(instance => {
 		instance.createRandomZombie("dupa", { from: addr })
