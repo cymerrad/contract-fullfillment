@@ -11,7 +11,9 @@
     "@types/node": "^10.12.12",
     "@types/web3": "^1.0.14",
     "truffle-contract": "^4.0.0-beta.2",
+    "truffle-typings": "^1.0.5",
     "ts-node": "^7.0.1",
+    "typechain": "^0.3.9",
     "typescript": "^3.2.2",
     "web3": "^1.0.0-beta.37"
   },
@@ -21,7 +23,8 @@
     "geth": "geth --config geth.toml",
     "geth-console": "geth --config geth.toml console",
     "ganache": "nohup ganache-cli -v 1>local/ganache.log 2>local/ganache.log &",
-    "recover-types": "ts-node --files --project ./tsconfig.json src/recoverTypes.ts",
+    "recover-types-discontinued": "ts-node --files --project ./tsconfig.json src/recoverTypes.ts",
+    "recover-types": "typechain --target truffle 'build/contracts/*.json'",
     "app": "ts-node src/index.ts",
     "build": "tsc -p ."
   }

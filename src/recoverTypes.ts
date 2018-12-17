@@ -1,7 +1,9 @@
 import * as fs from "fs";
 
+const moduleName = "ZombieOwnership";
+
 let artifact: A.Artifact;
-fs.readFile("./build/contracts/ZombieOwnership.json", (err, data) => {
+fs.readFile(`./build/contracts/${moduleName}.json`, (err, data) => {
 	if (err) {
 		throw err;
 	}
@@ -13,8 +15,6 @@ fs.readFile("./build/contracts/ZombieOwnership.json", (err, data) => {
 
 function main() {
 	console.log("names", artifact.abi.map(fn => fn.name));
-}
 
-(async () => {
-	console.log("Wat");
-})()
+
+}
